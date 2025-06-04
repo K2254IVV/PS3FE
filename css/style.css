@@ -1,0 +1,117 @@
+body {
+    background: #ece9d8;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.window {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid #999;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.title-bar {
+    background: linear-gradient(to bottom, #0058e6, #003bb3);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.window-controls span {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu-bar {
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 3px 5px;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu-bar li {
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.menu-bar li:hover {
+    background: #e0e0e0;
+}
+
+.address-bar {
+    padding: 5px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.address-bar input {
+    flex-grow: 1;
+    margin: 0 5px;
+    padding: 2px;
+}
+
+.content {
+    display: flex;
+    height: 400px;
+}
+
+.sidebar {
+    width: 150px;
+    background: #f5f5f5;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background: #e0e0e0;
+}
+
+.file-list {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.file-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.file-list th, .file-list td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+}
+
+.file-list tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.status-bar {
+    background: #f0f0f0;
+    border-top: 1px solid #ccc;
+    padding: 3px 5px;
+    font-size: 12px;
+}
