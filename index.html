@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>PS3FE - PS3 File Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="window">
+        <!-- Заголовок как в Windows 7 -->
+        <div class="title-bar">
+            <div class="title">PS3 File Explorer</div>
+            <div class="window-controls">
+                <span class="minimize">─</span>
+                <span class="maximize">□</span>
+                <span class="close">✕</span>
+            </div>
+        </div>
+
+        <!-- Панель меню (File, Edit, View...) -->
+        <div class="menu-bar">
+            <ul>
+                <li>File</li>
+                <li>Edit</li>
+                <li>View</li>
+                <li>Tools</li>
+                <li>Help</li>
+            </ul>
+        </div>
+
+        <!-- Адресная строка -->
+        <div class="address-bar">
+            <span>Path:</span>
+            <input type="text" value="/dev_hdd0/" readonly>
+            <button>Go</button>
+        </div>
+
+        <!-- Основное содержимое (список файлов) -->
+        <div class="content">
+            <div class="sidebar">
+                <ul>
+                    <li>Home</li>
+                    <li>Games</li>
+                    <li>Music</li>
+                    <li>Photos</li>
+                    <li>Videos</li>
+                </ul>
+            </div>
+            <div class="file-list">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Size</th>
+                        <th>Type</th>
+                        <th>Date Modified</th>
+                    </tr>
+                    <tr>
+                        <td>📁 dev_hdd0</td>
+                        <td>--</td>
+                        <td>Folder</td>
+                        <td>2023-10-01</td>
+                    </tr>
+                    <tr>
+                        <td>📁 dev_usb000</td>
+                        <td>--</td>
+                        <td>Folder</td>
+                        <td>2023-10-02</td>
+                    </tr>
+                    <tr>
+                        <td>📄 game.txt</td>
+                        <td>12 KB</td>
+                        <td>Text File</td>
+                        <td>2023-09-30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Статус-бар -->
+        <div class="status-bar">
+            <span>3 items</span>
+        </div>
+    </div>
+</body>
+</html>
